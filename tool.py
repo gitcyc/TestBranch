@@ -1,11 +1,4 @@
-def add(*args):
-    l = len(args)
-    result = 0
-    for i in range(l):
-        if hasattr(args[i],'index'):
-            for j in range(len(args[i])):
-                result += args[i][j]
-        else:
-            result += args[i]
+def add(*args):  
+    result = sum(args)
     return result
-print(add(1,2,[3,4]))
+print(add(1,2,3))
