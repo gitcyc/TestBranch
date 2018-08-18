@@ -1,7 +1,4 @@
-def add(*args):
-    l = len(args)
-    result = 0
-    for i in range(l):
-        result += args[i]
+def add(*args):  
+    result = sum(args)
     return result
-print(add(1,2))
+print(add(1,2,3))
